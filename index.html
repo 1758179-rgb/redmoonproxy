@@ -3,57 +3,168 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RedMoon Proxy</title>
-    <meta name="description" content="RedMoon Proxy - Red-themed browser / proxy home page using DuckDuckGo" />
+    <title>RedMoon Desktop</title>
+    <meta name="description" content="RedMoon desktop UI with crimson wallpaper and DuckDuckGo inspired browser window" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@400;500;600;700&family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="page-shell">
-      <div class="browser-window" role="application" aria-label="RedMoon proxy browser window">
-        <div class="browser-bar">
-          <div class="window-controls" aria-hidden="true">
-            <span class="dot red"></span>
-            <span class="dot yellow"></span>
-            <span class="dot green"></span>
+    <div class="desktop">
+      <div class="desktop-icons left-column">
+        <div class="app-grid">
+          <div class="desktop-app">
+            <div class="app-icon green"><span>◈</span></div>
+            <div class="app-label">Games</div>
           </div>
-
-          <div class="browser-actions" aria-label="Browser navigation controls">
-            <button class="nav-btn" type="button" data-action="back" aria-label="Back">←</button>
-            <button class="nav-btn" type="button" data-action="forward" aria-label="Forward">→</button>
-            <button class="nav-btn" type="button" data-action="reload" aria-label="Reload">↻</button>
+          <div class="desktop-app">
+            <div class="app-icon dark"><span>AI</span></div>
+            <div class="app-label">AI</div>
           </div>
-
-          <form id="browser-form" class="browser-form" autocomplete="off">
-            <span class="lock">◌</span>
-            <input
-              id="browser-input"
-              type="text"
-              value="https://duckduckgo.com/"
-              aria-label="Address bar"
-            />
-            <button type="submit" class="go-btn">Go</button>
-          </form>
+          <div class="desktop-app">
+            <div class="app-icon gray"><span>⌘</span></div>
+            <div class="app-label">Terminal</div>
+          </div>
         </div>
 
-        <div class="browser-content">
-          <div class="home-screen visible" id="home-screen" aria-label="Home page">
-            <div class="moon-visual" aria-hidden="true"></div>
-            <div class="title-block">
-              <h1>REDMOON</h1>
-              <h2>PROXY</h2>
-            </div>
-            <p class="tagline">Crimson Moon Evocations</p>
+        <div class="app-grid">
+          <div class="desktop-app">
+            <div class="app-icon red"><span>N</span></div>
+            <div class="app-label">Movies</div>
           </div>
+          <div class="desktop-app">
+            <div class="app-icon blue"><span>◌</span></div>
+            <div class="app-label">Browser</div>
+          </div>
+          <div class="desktop-app">
+            <div class="app-icon purple"><span>◍</span></div>
+            <div class="app-label">Mirrors</div>
+          </div>
+        </div>
 
-          <iframe
-            id="proxy-frame"
-            title="DuckDuckGo browse window"
-            src="https://duckduckgo.com/"
-            referrerpolicy="strict-origin-when-cross-origin"
-          ></iframe>
+        <div class="app-grid">
+          <div class="desktop-app">
+            <div class="app-icon orange"><span>☼</span></div>
+            <div class="app-label">Anime</div>
+          </div>
+          <div class="desktop-app">
+            <div class="app-icon yellow"><span>▣</span></div>
+            <div class="app-label">Files</div>
+          </div>
+          <div class="desktop-app">
+            <div class="app-icon green-soft"><span>✦</span></div>
+            <div class="app-label">Notepad</div>
+          </div>
+        </div>
+
+        <div class="app-grid">
+          <div class="desktop-app">
+            <div class="app-icon red-2"><span>▶</span></div>
+            <div class="app-label">YouTube</div>
+          </div>
+          <div class="desktop-app">
+            <div class="app-icon cyan"><span>⌁</span></div>
+            <div class="app-label">Code</div>
+          </div>
+          <div class="desktop-app">
+            <div class="app-icon violet"><span>◫</span></div>
+            <div class="app-label">Calculator</div>
+          </div>
+        </div>
+
+        <div class="app-grid">
+          <div class="desktop-app">
+            <div class="app-icon green-2"><span>♫</span></div>
+            <div class="app-label">Music</div>
+          </div>
+          <div class="desktop-app">
+            <div class="app-icon orange-2"><span>◫</span></div>
+            <div class="app-label">Store</div>
+          </div>
+          <div class="desktop-app">
+            <div class="app-icon gray-2"><span>⚙</span></div>
+            <div class="app-label">Settings</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="wallpaper-scene">
+        <div class="time-panel">
+          <div class="digital-time">7:30 PM</div>
+          <div class="date-label">WEDNESDAY, OCTOBER 7</div>
+        </div>
+
+        <div class="moon-figure" aria-hidden="true">
+          <div class="moon-glow"></div>
+          <div class="silhouette"></div>
+          <div class="fire-sparks"></div>
+        </div>
+      </div>
+
+      <div class="side-word">SERUM</div>
+
+      <div class="dock">
+        <div class="dock-app active"><span>◫</span></div>
+        <div class="dock-app"><span>◍</span></div>
+        <div class="dock-app"><span>◌</span></div>
+        <div class="dock-app"><span>▶</span></div>
+        <div class="dock-app"><span>◐</span></div>
+        <div class="dock-app"><span>✦</span></div>
+        <div class="dock-app"><span>⌁</span></div>
+        <div class="dock-app"><span>◍</span></div>
+        <div class="dock-app"><span>⚙</span></div>
+      </div>
+    </div>
+
+    <div class="browser-window" aria-label="RedMoon browser">
+      <div class="browser-toolbar">
+        <div class="browser-left">
+          <div class="brand-mark">◍</div>
+          <div class="tab-strip">
+            <div class="tab active">Daydream</div>
+            <div class="tab inactive">New Tab</div>
+          </div>
+        </div>
+        <div class="browser-actions">
+          <span>✦</span>
+          <span>▣</span>
+        </div>
+      </div>
+
+      <div class="address-row">
+        <div class="nav-set">
+          <span>←</span>
+          <span>→</span>
+          <span>↻</span>
+        </div>
+        <div class="address-box">ddx://newtab</div>
+        <div class="mini-icons">
+          <span>☆</span>
+          <span>☰</span>
+        </div>
+      </div>
+
+      <div class="browser-body">
+        <div class="center-logo">Daydream</div>
+
+        <form id="search-form" class="search-shell">
+          <input id="search-input" type="text" placeholder="Search for anything..." aria-label="Search" />
+        </form>
+
+        <div class="shortcut-grid">
+          <div class="shortcut-item"><span class="site-icon google">G</span><span>Google</span></div>
+          <div class="shortcut-item"><span class="site-icon youtube">▶</span><span>YouTube</span></div>
+          <div class="shortcut-item"><span class="site-icon gitlab">⬢</span><span>GitLab</span></div>
+          <div class="shortcut-item"><span class="site-icon reddit">r</span><span>Reddit</span></div>
+          <div class="shortcut-item"><span class="site-icon twitter">X</span><span>Twitter</span></div>
+          <div class="shortcut-item"><span class="site-icon wiki">W</span><span>Wikipedia</span></div>
+          <div class="shortcut-item"><span class="site-icon stack">⌁</span><span>Stack Overflow</span></div>
+          <div class="shortcut-item"><span class="site-icon discord">◍</span><span>Discord</span></div>
+          <div class="shortcut-item"><span class="site-icon netflix">N</span><span>Netflix</span></div>
+          <div class="shortcut-item"><span class="site-icon amazon">A</span><span>Amazon</span></div>
+          <div class="shortcut-item"><span class="site-icon spotify">♫</span><span>Spotify</span></div>
+          <div class="shortcut-item"><span class="site-icon twitch">◉</span><span>Twitch</span></div>
         </div>
       </div>
     </div>
