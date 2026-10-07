@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RedMoon Proxy</title>
+    <meta name="description" content="RedMoon Proxy - Red-themed browser / proxy home page using DuckDuckGo" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <div class="browser-window" role="application" aria-label="RedMoon proxy browser window">
+        <div class="browser-bar">
+          <div class="window-controls" aria-hidden="true">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+
+          <div class="browser-actions" aria-label="Browser navigation controls">
+            <button class="nav-btn" type="button" data-action="back" aria-label="Back">←</button>
+            <button class="nav-btn" type="button" data-action="forward" aria-label="Forward">→</button>
+            <button class="nav-btn" type="button" data-action="reload" aria-label="Reload">↻</button>
+          </div>
+
+          <form id="browser-form" class="browser-form" autocomplete="off">
+            <span class="lock">◌</span>
+            <input
+              id="browser-input"
+              type="text"
+              value="https://duckduckgo.com/"
+              aria-label="Address bar"
+            />
+            <button type="submit" class="go-btn">Go</button>
+          </form>
+        </div>
+
+        <div class="browser-content">
+          <div class="home-screen visible" id="home-screen" aria-label="Home page">
+            <div class="moon-visual" aria-hidden="true"></div>
+            <div class="title-block">
+              <h1>REDMOON</h1>
+              <h2>PROXY</h2>
+            </div>
+            <p class="tagline">Crimson Moon Evocations</p>
+          </div>
+
+          <iframe
+            id="proxy-frame"
+            title="DuckDuckGo browse window"
+            src="https://duckduckgo.com/"
+            referrerpolicy="strict-origin-when-cross-origin"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
